@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form method="GET" action="" >
+        <label for="nome">Nome:</label>   
+        <!-- Type="text" é o padrão do form--> 
+        <!--  REQUIRED = é um atributo que deixa determinado campo input obrigatório para ser preenchido -->    
+        <input id="nome" name="nome" type="text" placeholder="Nome" required/>
+       
+        <Label for="idade">Idade</Label>
+        <input id="idade" name="idade" type="number" placeholder="Idade"/>
+       
+        <Label for="email">E-mail</Label>
+        <input id="email" name="email" type="email" placeholder="E-mail"/>
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="password_user"/>
+        <label for="pesquisa">Pesquisa</label>
+        <input type="search" name="pesquisa" id="pesquisa"/>
+        <p style="margin-bottom: 0;"><b>Sexo</b></p>
+        <div>
+            <label for="sexoM">Maculino</label>
+            <input type="radio" id="sexoM" value="M" name="sexo"/>
+        </div>
+        <div>
+            <label for="sexoF">Feminino</label>
+            <input type="radio" id="sexoF" value="F" name="sexo2"/>
+        </div>
+        <div>
+            <label for="sexoO">Outro</label>
+            <input type="radio" id="sexoO" value="O" name="sexo3"/>
+        </div>
+        <p style="margin-bottom: 0;"><b>Hobby</b></p>
+        <div>
+            <label for="hobby">Cantar</label>
+            <input type="checkbox" id="hobby" name="Cantar" value="sim">
+        </div>
+        <div>
+            <label for="hobby2">Dançar</label>
+            <input type="checkbox" id="hobby2" name="Dancar" value="sim">
+        </div>
+        <div>
+            <label for="hobby3">Programar</label>
+            <input type="checkbox" id="hobby3" name="Programar" value="sim">
+        </div>
+        <label>Range</label>
+        <input type="range"/>
+        <label for="cor">Color:</label>
+        <input type="color" name="color" id="cor"/>
+        <label for="oculto">NaoSei</label>
+        <input type="hidden" id="oculto" name="oculto" value="blabla"/>
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
